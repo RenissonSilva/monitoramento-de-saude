@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->enum('blood_type', ['A', 'B', 'AB', 'O']);
-            $table->enum('type', ['user', 'medic']);
+            $table->enum('type', ['patient', 'medic']);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
