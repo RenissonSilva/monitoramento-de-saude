@@ -40,6 +40,38 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="blood_type" class="col-md-4 col-form-label text-md-right">{{ __('Tipo sanguíneo') }}</label>
+                            <div class="col-md-6">
+                                <select class="form-control" name="blood_type">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="AB">AB</option>
+                                        <option value="O">O</option>
+                                </select>
+                                @error('blood_type')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>  
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="type" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de usuário') }}</label>
+                            <div class="col-md-6">
+                                <select class="form-control" name="type">
+                                        <option value="patient">Usuário</option>
+                                        <option value="medic">Médico</option>
+                                </select>
+                                @error('type')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>  
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
