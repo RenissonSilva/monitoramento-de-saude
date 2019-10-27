@@ -23,7 +23,7 @@ class CreateCheckupsTable extends Migration
             $table->float('colesterol_LDL',3,1);
             $table->float('colesterol_HDL',3,1);
             $table->text('observacoes');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
