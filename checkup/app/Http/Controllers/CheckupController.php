@@ -10,4 +10,8 @@ class CheckupController extends Controller
     {
         $this->middleware('auth');
     }
+    public function adicionarCheckup()
+    {
+        return view('checkup.adicionar');
+    }
 }
