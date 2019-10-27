@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!<br>
+                    <a href="{{ route('adicionar.checkup') }}">Cadastrar um novo check-up</a>
                 </div>
             </div>
         </div>
