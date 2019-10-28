@@ -16,12 +16,12 @@ class CreateCheckupsTable extends Migration
         Schema::create('checkups', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->dateTime('data_checkup');
-            $table->float('peso',3,1);
-            $table->float('altura',3,2);
+            $table->float('peso');
+            $table->float('altura');
             $table->text('pressao');
             $table->integer('glicose');
-            $table->float('colesterol_LDL',3,1);
-            $table->float('colesterol_HDL',3,1);
+            $table->float('colesterol_LDL');
+            $table->float('colesterol_HDL');
             $table->text('observacoes');
             $table->unsignedBigInteger('user_id')->nullable();
             
