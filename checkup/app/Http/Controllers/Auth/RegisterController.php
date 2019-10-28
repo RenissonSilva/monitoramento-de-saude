@@ -53,7 +53,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email','min:3' , 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8','max:24', 'confirmed'],
             'blood_type' =>['required'],
-            'type' => ['required'],
+            'type' => ['required','size:7'],
         ]);
     }
 
