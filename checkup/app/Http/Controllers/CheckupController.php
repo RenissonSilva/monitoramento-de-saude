@@ -35,4 +35,9 @@ class CheckupController extends Controller
         \App\Checkup::create($request->all());
         return redirect()->route('listagem.checkup');
     }
+    public function visualizarCheckup($id)
+    {
+        $checkup = \App\Checkup::find($id);
+        return view('checkup.visualizar', compact('checkup'));
+    }
 }
