@@ -16,6 +16,10 @@
                         </div>
                     @endif
 
+                    @if(session('success'))
+                        <div class="alert alert-success" role="alert" id="sucessoCriacao"><strong>{{session('success')}}</strong></div>
+                    @endif
+
                     <p>
                         <a class="btn btn-primary" href="{{ route('adicionar.checkup') }}">Novo Check-up</a>
                     </p>

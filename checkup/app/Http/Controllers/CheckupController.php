@@ -33,7 +33,7 @@ class CheckupController extends Controller
         ]);
 
         \App\Checkup::create($request->all());
-        return redirect()->route('listagem.checkup');
+        return redirect()->route('listagem.checkup')->withSuccess('Check-up criado com sucesso');
     }
     public function visualizarCheckup($id)
     {
