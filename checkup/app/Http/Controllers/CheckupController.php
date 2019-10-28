@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Checkup;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,6 +15,11 @@ class CheckupController extends Controller
     }
     public function listagemCheckup()
     {
+        if(Auth::user()->type != 'medic'){
+            //dd(\App\Checkup::all()->where('user_id',Auth::user()->id));
+            $checkups = \App\Checkup::all()->where('user_id',Auth::user()->id);
+            return view('checkup.listaciente', compact('checkups'));
+        }
         $checkups = \App\Checkup::paginate(5);
         return view('checkup.listagem', compact('checkups'));
     }
