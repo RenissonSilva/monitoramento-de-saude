@@ -8,11 +8,10 @@
             <div class="card">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">Produtos</li>
-                        <li class="breadcrumb-item active">Adicionar</li>
                     </ol>
 
                 <div class="card-body">
-                    <form action="" method="POST">
+                    <form action="{{route('salvar.checkup')}}" method="POST">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="data_checkup">Data do check-up:</label>  
