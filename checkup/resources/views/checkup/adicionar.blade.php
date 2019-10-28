@@ -15,7 +15,7 @@
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="patientselect">Paciente</label>
-                            <select class="form-control" id="patientselect" name="user_id">
+                            <select class="form-control" id="patientselect" name="user_id" required>
                                 <option selected> Selecione um Paciente</option>
                                 @foreach ($patients as $patient)
                                     <option value="{{$patient->id}}">{{$patient->name}}</option>
