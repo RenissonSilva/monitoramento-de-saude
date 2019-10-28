@@ -15,7 +15,8 @@
                     @endif
 
                     You are logged in!<br>
-                    <a href="{{ route('adicionar.checkup') }}">Cadastrar um novo check-up</a>
+                    <a href="{{ route('adicionar.checkup') }}">Cadastrar um novo check-up</a><br>
+                    <a href="{{ route('listagem.checkup') }}">Listagem de check-ups</a>
                 </div>
             </div>
         </div>

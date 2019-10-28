@@ -35,3 +35,7 @@ Route::get('/visualizar/checkup/{id}', [
     'uses' => 'CheckupController@visualizarCheckup',
     'as' => 'visualizar.checkup'
 ]);
+Route::get('/deletar/checkup/{id}', [
+    'uses' => 'CheckupController@deletarCheckup',
+    'as' => 'deletar.checkup'
+]);

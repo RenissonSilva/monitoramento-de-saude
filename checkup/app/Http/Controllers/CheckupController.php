@@ -40,4 +40,10 @@ class CheckupController extends Controller
         $checkup = \App\Checkup::find($id);
         return view('checkup.visualizar', compact('checkup'));
     }
+    public function deletarCheckup($id)
+    {
+        $checkup = \App\Checkup::find($id);
+        $checkup->delete();
+        return redirect()->route('listagem.checkup');
+    }
 }

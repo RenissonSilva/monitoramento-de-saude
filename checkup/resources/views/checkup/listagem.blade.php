@@ -37,7 +37,9 @@
                                 <td>{{ $checkup->peso }}</td>
                                 <td>{{ $checkup->altura }}</td>
                                 <td>
-                                <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btn btn-success">Detalhes</a></td>
+                                <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btn btn-success">Detalhes</a>
+                                <a href="{{ route('deletar.checkup', $checkup->id) }}" class="btn btn-danger">Deletar</a>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
