@@ -11171,6 +11171,7 @@ body {
           transition-duration: 0.3s;
   border-radius: 42px;
   padding: 16px 31px !important;
+  text-decoration: none !important;
 }
 
 .linkHome:hover {
@@ -11224,10 +11225,6 @@ body {
   background-color: #0E2773;
   color: #fff;
   opacity: 0.7;
-}
-
-.linkHome {
-  text-decoration: none !important;
 }
 
 .buttonPainel {
@@ -11340,5 +11337,9 @@ a {
   background-color: #f073ad;
   color: black !important;
   box-shadow: -4px 4px 3px 1px #c45287;
+}
+
+#aC {
+  color: #021859;
 }
 
