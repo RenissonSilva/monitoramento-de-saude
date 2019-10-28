@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Checkup extends Model
 {
     protected $fillable = [
-        'data_checkup', 'peso', 'altura','pressao','glicose','colesterol_LDL','colesterol_HDL','observacoes',
+        'data_checkup', 'peso', 'altura','pressao','glicose','colesterol_LDL','colesterol_HDL','observacoes','user_id'
     ];
 
     public function user() {
