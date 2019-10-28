@@ -22,14 +22,14 @@ class CheckupController extends Controller
     public function salvarCheckup(Request $request)
     {
         $request->validate([
-        	'data_checkup' => 'required',
-			'peso' => 'required',
-			'altura' => 'required',
-			'pressao' => 'required',
-			'glicose' => 'required',
-			'colesterol_LDL' => 'required',
-			'colesterol_HDL' => 'required',
-			'observacoes' => 'required'
+        	'data_checkup' => 'required|date|min:10|max:10',
+			'peso' => 'required|numeric|min:0.1|max:600',
+			'altura' => 'required|numeric|min:0.1|max:3',
+			'pressao' => 'required|string|min:4|max:30',
+			'glicose' => 'required|numeric|integer|min:1|max:200',
+			'colesterol_LDL' => 'required|numeric|min:1|max:200',
+			'colesterol_HDL' => 'required|numeric|min:2|max:100',
+			'observacoes' => 'required|string|min:1|max:255'
         ]);
 
         \App\Checkup::create($request->all());

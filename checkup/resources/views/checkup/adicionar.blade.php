@@ -27,7 +27,7 @@
 
                         <div class="form-group">
                             <label for="peso">Peso:</label>  
-                            <input type="number" name="peso" class="form-control" value="{{old('peso')}}" placeholder="70.5"/>
+                            <input type="number" name="peso" class="form-control" value="{{old('peso')}}" step="0.01" placeholder="70.5"/>
                         </div>
                         @if($errors->any())
                             @foreach($errors->get('peso') as $message)
@@ -39,7 +39,7 @@
 
                         <div class="form-group">
                             <label for="altura">Altura:</label>  
-                            <input type="number" name="altura" class="form-control" value="{{old('altura')}}" placeholder="1.75"/>
+                            <input type="number" name="altura" class="form-control" value="{{old('altura')}}" step="0.01" placeholder="1.75"/>
                         </div>
                         @if($errors->any())
                             @foreach($errors->get('altura') as $message)
@@ -75,7 +75,7 @@
 
                         <div class="form-group">
                             <label for="colesterol_LDL">Colesterol LDL:</label>  
-                            <input type="number" name="colesterol_LDL" value="{{old('colesterol_LDL')}}" class="form-control" placeholder="120"/>
+                            <input type="number" name="colesterol_LDL" value="{{old('colesterol_LDL')}}" step="0.01" class="form-control" placeholder="120"/>
                         </div>
                         @if($errors->any())
                             @foreach($errors->get('colesterol_LDL') as $message)
@@ -87,7 +87,7 @@
                          
                         <div class="form-group">
                             <label for="colesterol_HDL">Colesterol HDL:</label>  
-                            <input type="number" name="colesterol_HDL" value="{{old('colesterol_HDL')}}" class="form-control" placeholder="5000"/>
+                            <input type="number" name="colesterol_HDL" value="{{old('colesterol_HDL')}}" step="0.01" class="form-control" placeholder="50"/>
                         </div>
                         @if($errors->any())
                             @foreach($errors->get('colesterol_HDL') as $message)
@@ -99,7 +99,7 @@
 
                         <div class="form-group">
                             <label for="observacoes">Observações:</label>  
-                            <input type="number" name="observacoes" value="{{old('observacoes')}}" class="form-control" placeholder="45"/>
+                            <input type="text" name="observacoes" value="{{old('observacoes')}}" class="form-control" placeholder="Ex: Paciente apresentou ..."/>
                         </div>
                         @if($errors->any())
                             @foreach($errors->get('observacoes') as $message)
