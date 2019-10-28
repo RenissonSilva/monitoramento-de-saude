@@ -11287,3 +11287,57 @@ a {
   font-size: 20px;
 }
 
+.breadcrumb-item.active {
+  color: #021859;
+}
+
+.btnDeletar {
+  background-color: #ff5252;
+  color: white !important;
+  border: 3px solid #ff5252;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 5px 30px !important;
+  text-decoration: none !important;
+}
+
+.btnDeletar:hover {
+  background-color: #ff5252;
+  color: white !important;
+  box-shadow: -4px 4px 3px 1px #f93d3d;
+}
+
+.btnDetalhes {
+  background-color: #6c85ff;
+  color: #fff !important;
+  border: 3px solid #6c85ff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 5px 30px !important;
+  text-decoration: none !important;
+}
+
+.btnDetalhes:hover {
+  background-color: #6c85ff;
+  color: white !important;
+  box-shadow: -4px 4px 3px 1px #516df7;
+}
+
+.btnNovoCheckup {
+  background-color: #f073ad;
+  color: #000 !important;
+  border: 3px solid #f073ad;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 7px 31px !important;
+}
+
+.btnNovoCheckup:hover {
+  background-color: #f073ad;
+  color: black !important;
+  box-shadow: -4px 4px 3px 1px #c45287;
+}
+
