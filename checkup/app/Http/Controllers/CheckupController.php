@@ -29,7 +29,7 @@ class CheckupController extends Controller
     public function salvarCheckup(Request $request)
     {
         $request->validate([
-            'user_id' => 'required',
+            'user_id' => 'required|numeric|min:0',
         	'data_checkup' => 'required|date|min:10|max:10',
 			'peso' => 'required|numeric|min:0.1|max:600',
 			'altura' => 'required|numeric|min:0.1|max:3',
