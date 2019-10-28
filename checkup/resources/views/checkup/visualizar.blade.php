@@ -1,0 +1,58 @@
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="card">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ route('listagem.checkup') }}">Checkups</a></li>
+                    </ol>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                        <label for="data_checkup">Data do check-up:</label>  
+                        <input class="form-control" name="data_checkup" value="{{ $checkup->data_checkup }}" type="text" readonly>
+                    </div>  
+                    <div class="form-group">
+                        <label for="peso">Peso:</label>  
+                        <input class="form-control" name="peso" type="text" value="{{ $checkup->peso }}" readonly>
+                    </div>  
+                    <div class="form-group">
+                        <label for="altura">Altura:</label>  
+                        <input class="form-control" name="altura" value="{{ $checkup->altura }}" type="number" readonly>
+                    </div> 
+                    <div class="form-group">
+                        <label for="pressao">Pressão arterial:</label>  
+                        <input class="form-control" name="pressao" value="{{ $checkup->pressao }}" type="number" readonly>
+                    </div>  
+                    <div class="form-group">
+                        <label for="glicose">Nível de glicose:</label>  
+                        <input class="form-control" name="glicose" value="{{ $checkup->glicose }}" type="number" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="colesterol_LDL">Colesterol LDL:</label>  
+                        <input class="form-control" name="colesterol_LDL" value="{{ $checkup->colesterol_LDL }}" type="number" readonly>
+                    </div>  
+                    <div class="form-group">
+                        <label for="colesterol_HDL">Colesterol HDL:</label>  
+                        <input class="form-control" name="colesterol_HDL" value="{{ $checkup->colesterol_HDL }}" type="number" readonly>
+                    </div>  
+                    <div class="form-group">
+                        <label for="observacoes">Observações:</label>  
+                        <input class="form-control" name="observacoes" value="{{ $checkup->observacoes }}" type="number" readonly>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
