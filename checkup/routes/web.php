@@ -23,3 +23,11 @@ Route::get('/adicionar/checkup', [
     'uses' => 'CheckupController@adicionarCheckup',
     'as' => 'adicionar.checkup'
 ]);
+Route::get('/listagem/checkup', [
+    'uses' => 'CheckupController@listagemCheckup',
+    'as' => 'listagem.checkup'
+]);
+Route::post('/salvar/checkup', [
+    'uses' => 'CheckupController@salvarCheckup',
+    'as' => 'salvar.checkup'
+]);
