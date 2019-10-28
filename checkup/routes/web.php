@@ -31,3 +31,7 @@ Route::post('/salvar/checkup', [
     'uses' => 'CheckupController@salvarCheckup',
     'as' => 'salvar.checkup'
 ]);
+Route::get('/visualizar/checkup/{id}', [
+    'uses' => 'CheckupController@visualizarCheckup',
+    'as' => 'visualizar.checkup'
+]);
