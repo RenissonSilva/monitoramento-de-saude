@@ -11228,7 +11228,7 @@ body {
 }
 
 .buttonPainel {
-  margin-bottom: 20px !important;
+  margin: 20px !important;
 }
 
 .card-header {
@@ -11241,6 +11241,10 @@ a {
 
 .cardMed {
   padding: 30px;
+}
+
+.cardList {
+  padding: 3em;
 }
 
 .cardAuth {
