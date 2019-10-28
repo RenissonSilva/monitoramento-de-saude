@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
-            <div class="card">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">Check-ups</li>
+            <div class="card cardCheckup">
+                <ol class="breadcrumb titleCard">
+                    <li class="breadcrumb-item active titleCheckup">Check-ups</li>
                 </ol>
 
                 <div class="card-body">
@@ -21,7 +21,7 @@
                     @endif
 
                     <p>
-                        <a class="btn btn-primary" href="{{ route('adicionar.checkup') }}">Novo Check-up</a>
+                        <a class="btnNovoCheckup" href="{{ route('adicionar.checkup') }}">Novo Check-up</a>
                     </p>
 
                     <table class="table table-striped">
@@ -45,10 +45,10 @@
                                 <td>{{ $checkup->altura }}</td>
                                 <td>{{ date('d-m-Y', strtotime($checkup->data_checkup))}}</td>
                                 <td>
-                                <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btn btn-success">Detalhes</a>
+                                <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btnDetalhes">Detalhes</a>
                                 </td>
                                 <td>
-                                <a href="{{ route('deletar.checkup', $checkup->id) }}" class="btn btn-danger">Deletar</a>
+                                <a href="{{ route('deletar.checkup', $checkup->id) }}" class="btnDeletar">Deletar</a>
                                 </td>
                             </tr>
                         @endforeach

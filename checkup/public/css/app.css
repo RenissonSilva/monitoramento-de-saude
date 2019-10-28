@@ -11171,6 +11171,7 @@ body {
           transition-duration: 0.3s;
   border-radius: 42px;
   padding: 16px 31px !important;
+  text-decoration: none !important;
 }
 
 .linkHome:hover {
@@ -11226,14 +11227,6 @@ body {
   opacity: 0.7;
 }
 
-.linkHome {
-  text-decoration: none !important;
-}
-
-.buttonPainel {
-  margin-bottom: 20px !important;
-}
-
 .card-header {
   font-size: 20px;
 }
@@ -11246,8 +11239,12 @@ a {
   padding: 30px;
 }
 
+.cardList {
+  padding: 3em;
+}
+
 .cardAuth {
-  background-color: #0E2773;
+  background-color: #000;
   color: #fff;
   opacity: 0.7;
 }
@@ -11265,6 +11262,84 @@ a {
 }
 
 .botaoConfirma:hover {
+  background-color: #c94b85;
+}
+
+.invalid-feedback {
+  font-size: 16px !important;
+  color: #ff3232 !important;
+}
+
+.cardCheckup {
+  box-shadow: 0 0 1em #f073ad;
+}
+
+.titleCard {
   background-color: #f073ad;
+  color: #021859;
+}
+
+.titleCheckup {
+  text-align: center !important;
+  font-size: 20px;
+}
+
+.breadcrumb-item.active {
+  color: #021859;
+}
+
+.btnDeletar {
+  background-color: #ff5252;
+  color: white !important;
+  border: 3px solid #ff5252;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 5px 30px !important;
+  text-decoration: none !important;
+}
+
+.btnDeletar:hover {
+  background-color: #ff5252;
+  color: white !important;
+  box-shadow: -4px 4px 3px 1px #f93d3d;
+}
+
+.btnDetalhes {
+  background-color: #6c85ff;
+  color: #fff !important;
+  border: 3px solid #6c85ff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 5px 30px !important;
+  text-decoration: none !important;
+}
+
+.btnDetalhes:hover {
+  background-color: #6c85ff;
+  color: white !important;
+  box-shadow: -4px 4px 3px 1px #516df7;
+}
+
+.btnNovoCheckup {
+  background-color: #f073ad;
+  color: #000 !important;
+  border: 3px solid #f073ad;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 7px 31px !important;
+  text-decoration: none !important;
+}
+
+.btnNovoCheckup:hover {
+  background-color: #f073ad;
+  color: black !important;
+  box-shadow: -4px 4px 3px 1px #c45287;
+}
+
+#aC {
+  color: #021859;
 }
 

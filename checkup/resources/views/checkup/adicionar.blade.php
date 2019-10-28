@@ -5,9 +5,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
-            <div class="card">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">Checkup</li>
+            <div class="card cardCheckup">
+                
+                    <ol class="breadcrumb titleCard">
+                        <li class="breadcrumb-item titleCheckup">Checkup</li>
                     </ol>
 
                 <div class="card-body">
@@ -126,7 +127,7 @@
                             @endforeach
                         @endif
 
-                        <button type="submit" class="btn btn-success">Adicionar</button>
+                        <center><button type="submit" class=" linkHome">Adicionar</button></center>
                     </form>
                 </div>
             </div>
