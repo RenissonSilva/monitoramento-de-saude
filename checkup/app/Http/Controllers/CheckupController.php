@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CheckupController extends Controller
 {
@@ -18,6 +19,9 @@ class CheckupController extends Controller
     }
     public function adicionarCheckup()
     {
+        if(Auth::user()->type != 'medic'){
+            return redirect()->route('home');
+        }
         $patients = User::All()->where('type','patient');
         //dd($patients);
         return view('checkup.adicionar', compact('patients'));
