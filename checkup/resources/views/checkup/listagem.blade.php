@@ -28,20 +28,26 @@
                         <thead>
                             <tr>
                                <th>ID</th>
-                               <th>Data do check-up</th> 
-                               <th>Peso</th> 
-                               <th>Altura</th> 
+                               <th>Nome do paciente</th>
+                               <th>Peso</th>
+                               <th>Altura</th>
+                               <th>Data do check-up</th>
+                               <th>Detalhes</th>
+                               <th>Deletar</th>
                             </tr>
                         </thead>
                         <tbody>
                         @foreach($checkups as $checkup)
                             <tr>
                                 <th scope="row">{{ $checkup->id }}</th>
-                                <td>{{ $checkup->data_checkup }}</td>
+                                <td>{{ $checkup->user->name}}</td>
                                 <td>{{ $checkup->peso }}</td>
                                 <td>{{ $checkup->altura }}</td>
+                                <td>{{ date('d-m-Y', strtotime($checkup->data_checkup))}}</td>
                                 <td>
                                 <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btn btn-success">Detalhes</a>
+                                </td>
+                                <td>
                                 <a href="{{ route('deletar.checkup', $checkup->id) }}" class="btn btn-danger">Deletar</a>
                                 </td>
                             </tr>
