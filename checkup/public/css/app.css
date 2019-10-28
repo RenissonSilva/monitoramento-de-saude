@@ -11247,7 +11247,7 @@ a {
 }
 
 .cardAuth {
-  background-color: #0E2773;
+  background-color: #000;
   color: #fff;
   opacity: 0.7;
 }
@@ -11265,6 +11265,11 @@ a {
 }
 
 .botaoConfirma:hover {
-  background-color: #f073ad;
+  background-color: #c94b85;
+}
+
+.invalid-feedback {
+  font-size: 16px !important;
+  color: #ff3232 !important;
 }
 
