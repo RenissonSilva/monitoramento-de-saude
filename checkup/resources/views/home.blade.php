@@ -13,8 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <a class="linkHome buttonPainel" href="{{ route('listagem.checkup') }}">Listagem de check-ups</a>
                 </div>
             </div>
         </div>
