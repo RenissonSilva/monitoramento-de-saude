@@ -1,0 +1,22 @@
+.navbar{
+	background-color:#021859!important;
+	height:8vh;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+.navbar-brand{
+	color:#f073ad!important;
+	font-size:3vh;
+	font-family: 'Ubuntu', sans-serif;
+}
+.nav-link{
+    background-color: #021859;
+    color: #fff!important;
+    border:3px solid #f073ad;
+    transition-duration: 0.3s;
+    border-radius:42px;
+    padding:16px 31px!important;
+}
+.nav-link:hover{
+	background-color: #f073ad;
+	color:#000;
+}

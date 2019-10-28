@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Patua+One&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Patua+One&display=swap);@import url(https://fonts.googleapis.com/css?family=Ubuntu&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -11110,7 +11110,7 @@ body {
   margin: 0;
   background-size: cover;
   background-blend-mode: luminosity;
-  background-image: url(/images/bg-home.jpg?17a5516754587aced8187deeafa5a84e);
+  background-image: url(/images/bg-home.jpg?4af6eb256fd7bd535e4f137a4e81fc07);
 }
 
 .full-height {
@@ -11192,5 +11192,31 @@ body {
   text-shadow: 2px 2px 3px #000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #032CA6;
+}
+
+.navbar {
+  background-color: #021859 !important;
+  height: 8vh;
+}
+
+.navbar-brand {
+  color: #f073ad !important;
+  font-size: 3vh;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-link {
+  background-color: #021859;
+  color: #fff !important;
+  border: 3px solid #f073ad;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 16px 31px !important;
+}
+
+.nav-link:hover {
+  background-color: #f073ad;
+  color: #000;
 }
 
