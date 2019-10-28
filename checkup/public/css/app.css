@@ -11242,7 +11242,29 @@ a {
   font-size: 18px;
 }
 
-.card {
+.cardMed {
   padding: 30px;
+}
+
+.cardAuth {
+  background-color: #0E2773;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.card-header {
+  text-align: center;
+}
+
+#linkEsqueceu {
+  color: #f073ad;
+}
+
+.botaoConfirma {
+  background-color: #f073ad;
+}
+
+.botaoConfirma:hover {
+  background-color: #f073ad;
 }
 

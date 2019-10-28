@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card" id="cardPainel">
+            <div class="card cardMed" id="cardPainel">
                 <center>
                     <div class="card-header">Painel de controle - Médico</div>
 
