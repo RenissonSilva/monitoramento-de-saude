@@ -14,8 +14,8 @@
                     <form action="{{route('salvar.checkup')}}" method="POST">
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <label for="patientselect">Paciente</label>
-                            <select class="form-control" id="patientselect" name="user_id" required>
+                            <label for="user_id">Paciente</label>
+                            <select class="form-control" id="user_id" name="user_id">
                                 <option selected> Selecione um Paciente</option>
                                 @foreach ($patients as $patient)
                                     <option value="{{$patient->id}}">{{$patient->name}}</option>
@@ -23,6 +23,13 @@
                                 @endforeach
                             </select>
                           </div>
+                          @if($errors->any())
+                            @foreach($errors->get('user_id') as $message)
+                                <div class="alert alert-danger" role="alert">
+                                  {{ $message }}
+                                </div>
+                            @endforeach
+                        @endif
                         <div class="form-group">
                             <label for="data_checkup">Data do check-up:</label>
                             <input type="date" value="{{old('data_checkup')}}" name="data_checkup" class="form-control"/>
@@ -109,7 +116,7 @@
 
                         <div class="form-group">
                             <label for="observacoes">Observações:</label>
-                            <textarea type="text" name="observacoes" value="{{old('observacoes')}}" class="form-control" placeholder="Ex: Paciente apresentou ..." rows="3"></textarea>
+                            <textarea type="text" name="observacoes" value="{{old('observacoes')}}" class="form-control" placeholder="Ex: Paciente apresentou ..." rows="3">{{old('observacoes')}}</textarea>
                         </div>
                         @if($errors->any())
                             @foreach($errors->get('observacoes') as $message)
