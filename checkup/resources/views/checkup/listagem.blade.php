@@ -33,6 +33,7 @@
                                <th>Altura</th>
                                <th>Data do check-up</th>
                                <th>Detalhes</th>
+                               <th>Editar</th>
                                <th>Deletar</th>
                             </tr>
                         </thead>
@@ -46,6 +47,9 @@
                                 <td>{{ date('d-m-Y', strtotime($checkup->data_checkup))}}</td>
                                 <td>
                                 <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btnDetalhes">Detalhes</a>
+                                </td>
+                                <td>
+                                    <a href="{{ route('edit.checkup', $checkup->id) }}" class="btn btn-success">Editar</a>
                                 </td>
                                 <td>
                                 <a href="{{ route('deletar.checkup', $checkup->id) }}" class="btnDeletar">Deletar</a>
