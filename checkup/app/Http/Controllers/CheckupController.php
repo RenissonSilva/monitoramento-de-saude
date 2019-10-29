@@ -78,10 +78,11 @@ class CheckupController extends Controller
 
     }
 
-    public function updateCheckup(Request $request, $id){
+    public function updateCheckup(Request $request){
+
+        //dd($request->get('id'));
 
         $request->validate([
-        	'data_checkup' => 'required|date|min:10|max:10',
 			'peso' => 'required|numeric|min:0.1|max:600',
 			'altura' => 'required|numeric|min:0.1|max:3',
 			'pressao' => 'required|string|min:4|max:30',
@@ -90,7 +91,7 @@ class CheckupController extends Controller
 			'colesterol_HDL' => 'required|numeric|min:2|max:100',
 			'observacoes' => 'required|string|min:1|max:500'
         ]);
-        $checkup = \App\Checkup::find($id);
+        $checkup = \App\Checkup::find($request->get('id'));
         $checkup->peso = $request->get('peso');
         $checkup->altura = $request->get('altura');
         $checkup->pressao = $request->get('pressao');
