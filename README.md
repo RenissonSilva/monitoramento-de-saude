@@ -1,7 +1,7 @@
 # monitoramento-de-saude
 Prova de web 2 - Sistema de monitoramento de saúde
 
-# OBS : Para fazer login como médico você deve pegar um dos e-mails que foram gerados pela seed e colocar na senha 'ipi2019'
+### OBS : Para fazer login você deve pegar um dos e-mails que foram gerados pela seed (seja do médico ou paciente).Senha é 'ipi2019' para todos.
 
 # Como rodar o projeto
 
@@ -46,7 +46,7 @@ Instale o npm
 Rode o npm para compilar o css e javascript 
     
     npm run prod
-    
+    #
 Rode o servidor
 
     php artisan serve
