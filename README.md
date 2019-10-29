@@ -46,7 +46,7 @@ Instale o npm
 Rode o npm para compilar o css e javascript 
     
     npm run prod
-    #
+    
 Rode o servidor
 
     php artisan serve
