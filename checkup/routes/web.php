@@ -23,6 +23,16 @@ Route::get('/adicionar/checkup', [
     'uses' => 'CheckupController@adicionarCheckup',
     'as' => 'adicionar.checkup'
 ]);
+
+Route::get('/edit/checkup/{id}', [
+    'uses' => 'CheckupController@editCheckup',
+    'as' => 'edit.checkup'
+]);
+Route::get('/update/checkup/{id}' , [
+    'uses' => 'CheckupController@updateCheckup',
+    'as' => 'update.checkup'
+]);
+
 Route::get('/listagem/checkup', [
     'uses' => 'CheckupController@listagemCheckup',
     'as' => 'listagem.checkup'
