@@ -28,7 +28,7 @@ Route::get('/edit/checkup/{id}', [
     'uses' => 'CheckupController@editCheckup',
     'as' => 'edit.checkup'
 ]);
-Route::get('/update/checkup/{id}' , [
+Route::post('/update/checkup' , [
     'uses' => 'CheckupController@updateCheckup',
     'as' => 'update.checkup'
 ]);
