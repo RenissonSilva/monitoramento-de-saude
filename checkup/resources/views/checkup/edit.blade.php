@@ -16,8 +16,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                <form action="{{ route('update.checkup', $checkup->id) }}" method="POST">
+                <form action="{{ route('update.checkup') }}" method="POST">
                     {{ csrf_field() }}
+                    <input type="hidden" name="id" value="{{$checkup->id}}">
                     <div class="form-group">
                         <label for="data_checkup">Data do check-up:</label>
                         <input class="form-control" name="data_checkup" value="{{ date('d-m-Y  H:m:s', strtotime($checkup->data_checkup))}}" type="text" readonly>
@@ -50,7 +51,7 @@
                         <label for="observacoes">Observações:</label>
                     <textarea class="form-control" name="observacoes"  type="number">{{ $checkup->observacoes}}</textarea>
                     </div>
-                    <button type="submit" class=" linkHome">Adicionar</button>
+                    <button type="submit" class="linkHome">Adicionar</button>
                 </form>
                 </div>
             </div>
