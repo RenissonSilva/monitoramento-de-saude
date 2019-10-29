@@ -49,7 +49,7 @@
                                 <a href="{{ route('visualizar.checkup', $checkup->id) }}" class="btnDetalhes">Detalhes</a>
                                 </td>
                                 <td>
-                                    <a href="{{ route('edit.checkup', $checkup->id) }}" class="btn btn-success">Editar</a>
+                                    <a href="{{ route('edit.checkup', $checkup->id) }}" class="btnEditar">Editar</a>
                                 </td>
                                 <td>
                                 <a href="{{ route('deletar.checkup', $checkup->id) }}" class="btnDeletar">Deletar</a>

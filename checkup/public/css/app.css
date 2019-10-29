@@ -11343,3 +11343,20 @@ a {
   color: #021859;
 }
 
+.btnEditar {
+  background-color: #b672f5;
+  color: white !important;
+  border: 3px solid #b672f5;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border-radius: 42px;
+  padding: 7px 31px !important;
+  text-decoration: none !important;
+}
+
+.btnEditar:hover {
+  background-color: #b672f5;
+  color: white !important;
+  box-shadow: -4px 4px 3px 1px #9355cc;
+}
+
