@@ -30,9 +30,11 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                                <button id="check">Mostrar senha</button>
-                                <input type="checkbox" id="check"/>
-
+                                {{-- <button id="check">Mostrar senha</button> --}}
+                                <div>
+                                    <input type="checkbox" id="check" style="display: inline; margin-right: 4px;">
+                                    <h6 style="display: inline;">Mostrar senha</h6>
+                                </div>
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
